@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lettre de Motivation - Administration - Rayan Fuchs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #003E74; /* Bleu administration */
+            --secondary-color: #8A8D8F; /* Gris neutre */
+            --accent-color: #E4002B; /* Rouge suisse */
+            --light-bg: #F8F9FB;
+            --dark-text: #333;
+            --light-text: #6c757d;
+            --white: #fff;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-text);
+            background-color: var(--light-bg);
+            letter-spacing: 0.3px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 0.5px;
+        }
+
+        .lettre-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: var(--white);
+            box-shadow: 0 0 30px rgba(0,0,0,0.08);
+            border-radius: 4px;
+            overflow: hidden;
+            border-top: 5px solid var(--primary-color);
+        }
+
+        .header {
+            position: relative;
+            background: var(--white);
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .header h1 {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .header p {
+            font-weight: 300;
+            color: var(--secondary-color);
+            font-size: 1.1rem;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+
+        .content-section {
+            padding: 2rem;
+        }
+
+        .footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            margin-top: 0;
+        }
+
+        .coordonnees {
+            margin-bottom: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .destinataire {
+            margin-bottom: 2rem;
+        }
+
+        .date {
+            text-align: right;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .objet {
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .lettre-body {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .lettre-body p {
+            margin-bottom: 1.2rem;
+        }
+
+        .signature {
+            margin-top: 2rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+        }
+
+        .boutons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn-custom {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 3px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--primary-color);
+            opacity: 0.9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+            color: var(--white);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+    <div class="container lettre-container">
+        <div class="header">
+            <h1>Lettre de Motivation</h1>
+            <p>Candidature pour un apprentissage d'Employé de commerce CFC</p>
+        </div>
+
+        <div class="content-section">
+            <div class="coordonnees">
+                <strong>Rayan Fuchs</strong><br>
+                Ferney-Voltaire, France<br>
+                Téléphone: +41 76 200 51 93<br>
+                Email: rayan@fuchs-gva.ch
+            </div>
+
+            <div class="destinataire">
+                <strong>Commune de Bellevue</strong><br>
+                Service des Ressources Humaines<br>
+                Route de Lausanne 329<br>
+                1293 Bellevue
+            </div>
+
+            <div class="date">
+                Ferney-Voltaire, le 10 avril 2025
+            </div>
+
+            <div class="objet">
+                <strong>Objet:</strong> Candidature pour l'apprentissage d'Employé de commerce CFC
+            </div>
+
+            <div class="lettre-body">
+                <p>Madame, Monsieur,</p>
+
+                <p>Actuellement en Seconde au Lycée International de Ferney-Voltaire, je me permets de vous soumettre ma candidature pour l'apprentissage d'Employé de commerce CFC au sein de votre administration communale.</p>
+
+                <p>Particulièrement intéressé par le travail administratif et le service public, je suis attiré par la diversité des tâches qu'offre un poste d'employé de commerce dans une commune. Mon stage à la RTS m'a permis de développer des compétences d'organisation et de classement documentaire, confirmant mon intérêt pour le travail administratif minutieux et méthodique. La perspective de contribuer au bon fonctionnement d'une administration publique et de participer au service aux citoyens représente pour moi un objectif motivant.</p>
+
+                <p>Je pense correspondre au profil que vous recherchez pour les raisons suivantes :</p>
+                <ul>
+                    <li>Sens de l'organisation et rigueur, développés à travers mes études et projets personnels</li>
+                    <li>Compétences linguistiques (français langue maternelle, anglais C1, allemand B1) permettant une communication efficace</li>
+                    <li>Aisance relationnelle et bonnes capacités de communication, cultivées par ma pratique du théâtre</li>
+                    <li>Maîtrise des outils informatiques, incluant la création de pages web en HTML/CSS</li>
+                    <li>Adaptabilité et capacité à travailler en équipe</li>
+                </ul>
+
+                <p>L'apprentissage au sein d'une administration communale comme celle de Bellevue me permettrait de développer des compétences concrètes dans la gestion administrative, tout en me familiarisant avec le fonctionnement des institutions publiques. Je suis conscient de l'importance du service public et de la relation avec les citoyens, et je m'engage à assumer ces responsabilités avec professionnalisme et discrétion.</p>
+
+                <p>Je reste à votre entière disposition pour un entretien qui me permettrait de vous présenter plus en détail ma motivation et mes compétences. Vous trouverez joints à cette candidature mon CV, mes bulletins scolaires ainsi que les résultats de mon test d'aptitude.</p>
+
+                <p>Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.</p>
+
+                <div class="signature">
+                    Rayan Fuchs
+                </div>
+            </div>
+
+            <div class="boutons">
+                <a href="index-administration.html" class="btn-custom btn-outline">
+                    <i class="fas fa-arrow-left me-2"></i> Retour au CV
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            &copy; 2025 Rayan Fuchs | Candidature Employé de commerce CFC
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
